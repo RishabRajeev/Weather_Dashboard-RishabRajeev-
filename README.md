@@ -30,4 +30,4 @@ Built with **HTML**, **CSS**, and **JavaScript** (no frameworks required).
 ## 📦 Installation
 1. Clone the repository or download the ZIP:
    ```bash
-   git clone https://github.com/your-username/weather-dashboard.git
+   git clone https://github.com/RishabRajeev/Weather_Dashboard-RishabRajeev.git
