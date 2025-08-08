@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, blue, white);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ensures it works on mobile too */
+    transition: background 0.5s ease; /* smooth background change */
+}
+
+.weather-app {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: darkblue;
+}
+
+.weather-info img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-info h2 {
+    margin: 10px 0 5px;
+}
+
+/* Spinner animation */
+.spinner {
+    border: 6px solid white;
+    border-top: 6px solid skyblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Background color changes */
+body.clear { background: linear-gradient(to bottom, skyblue, white); }
+body.clouds { background: linear-gradient(to bottom, gray, white); }
+body.rain { background: linear-gradient(to bottom, Turquoise, darkblue); }
+body.snow { background: linear-gradient(to bottom, white, snow); }
+body.thunderstorm { background: linear-gradient(to bottom, DarkSlateGray,black); }
